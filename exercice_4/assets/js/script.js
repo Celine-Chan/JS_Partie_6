@@ -2,12 +2,8 @@
 
 let days = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi','Dimanche'];
 
-const daysTableList = document.getElementById("daysList");
+const daysTableList = document.getElementById("daysTBody");
 
-days.forEach(element => daysTableList.innerHTML += `<li>${element}</li>` {
-    if (condition) {
-        
-    } else {
-        
-    }
+days.forEach(element => daysTableList.innerHTML += `<tr><td>${element}</tr></td>` {
+    
 });
