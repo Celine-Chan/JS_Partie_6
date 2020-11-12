@@ -1,18 +1,17 @@
 // boucle while
 
-let firstNumber = 5;
-let secondNumber = 4;
-let resultat = 0;
-let addResultat = document.getElementById("showResultat");
+let firstNumber = 2;
+let secondNumber = 5;
+let result = 0;
+let addResult = document.getElementById("showResult");
 
-function numberResultat() {
-    resultat = firstNumber * secondNumber;
-    secondNumber = resultat;
-    return resultat;
+function numberResult() {
+    result = firstNumber * secondNumber;
+    secondNumber = result;
+    return result;
 }
 
-
-while (numberResultat() < 250) {
-    addResultat.innerHTML += `<li>${resultat}</li>`;
-    console.log(resultat);
+while (numberResult() < 250) {
+    addResult.innerHTML += `<li>${result}</li>`;
+    console.log(result);
 }
