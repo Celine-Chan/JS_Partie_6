@@ -4,6 +4,14 @@ let days = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi','Dimanch
 
 const daysTableList = document.getElementById("daysTBody");
 
-days.forEach(element => daysTableList.innerHTML += `<tr><td>${element}</tr></td>` {
-    
+days.forEach(element => { 
+
+    let addTr = document.createElement("tr");
+    addTr.classList.add("text-uppercase");
+    if (element == "Samedi" || element == "Dimanche") {
+        addTr.classList.add("font-weight-bold");
+    } 
+
+    addTr.textContent = element;
+    daysTBody.appendChild(addTr);
 });
